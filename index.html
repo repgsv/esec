@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESEC | Ingeniería, Estrategia y Energía</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        :root {
+            --navy: #002244;
+            --gold: #FFD700;
+            --slate: #f1f5f9;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        h1, h2, h3, .font-poppins {
+            font-family: 'Poppins', sans-serif;
+        }
+        .bg-navy { background-color: var(--navy); }
+        .text-navy { color: var(--navy); }
+        .text-gold { color: var(--gold); }
+        .border-gold { border-color: var(--gold); }
+        .bg-gold { background-color: var(--gold); }
+
+        .hero-gradient {
+            background: linear-gradient(rgba(0, 34, 68, 0.85), rgba(0, 34, 68, 0.85)), url('https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&q=80&w=2070');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        .section-tag {
+            display: inline-block;
+            padding: 4px 12px;
+            background: rgba(255, 215, 0, 0.2);
+            color: var(--navy);
+            font-weight: 700;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 1rem;
+            border-left: 4px solid var(--gold);
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+
+    <!-- Navegación -->
+    <nav class="fixed w-full z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <div class="flex items-center">
+                    <span class="text-3xl font-bold text-navy font-poppins">ESEC<span class="text-gold">.</span></span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#inicio" class="text-sm font-semibold hover:text-gold transition-colors">Inicio</a>
+                    <a href="#nosotros" class="text-sm font-semibold hover:text-gold transition-colors">Nosotros</a>
+                    <a href="#servicios" class="text-sm font-semibold hover:text-gold transition-colors">Servicios</a>
+                    <a href="#mer" class="text-sm font-semibold hover:text-gold transition-colors">Sector MER</a>
+                    <a href="#contacto" class="bg-navy text-white px-6 py-2.5 rounded-sm text-sm font-bold hover:bg-opacity-90 transition-all">Contáctanos</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="text-navy p-2">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section (Reducida de min-h-screen a una altura fija o porcentual más baja) -->
+    <section id="inicio" class="hero-gradient min-h-[70vh] flex items-center pt-24 pb-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl">
+                <span class="text-gold font-bold tracking-widest uppercase mb-4 block">Estrategia • Ingeniería • Energía</span>
+                <h1 class="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
+                    Transformando el Futuro Energético Regional
+                </h1>
+                <p class="text-lg text-gray-300 mb-8 leading-relaxed">
+                    Consultoría especializada con 35 años de liderazgo técnico en ingeniería, mercados eléctricos y alta gerencia en Centroamérica.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#servicios" class="bg-gold text-navy px-8 py-3.5 text-center font-bold hover:scale-105 transition-transform rounded-sm">Nuestros Servicios</a>
+                    <a href="#contacto" class="border border-white text-white px-8 py-3.5 text-center font-bold hover:bg-white hover:text-navy transition-all rounded-sm">Consultoría MER</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <div class="bg-white py-10 border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+            <div>
+                <p class="text-3xl font-bold text-navy mb-1">35+</p>
+                <p class="text-gray-500 text-xs uppercase font-semibold tracking-wider">Años de Experiencia</p>
+            </div>
+            <div>
+                <p class="text-3xl font-bold text-navy mb-1">6</p>
+                <p class="text-gray-500 text-xs uppercase font-semibold tracking-wider">Países Regionales</p>
+            </div>
+            <div>
+                <p class="text-3xl font-bold text-navy mb-1">100%</p>
+                <p class="text-gray-500 text-xs uppercase font-semibold tracking-wider">Confiabilidad Técnica</p>
+            </div>
+            <div>
+                <p class="text-3xl font-bold text-navy mb-1">B2B</p>
+                <p class="text-gray-500 text-xs uppercase font-semibold tracking-wider">Enfoque Corporativo</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Nosotros / Historia Section -->
+    <section id="nosotros" class="py-20 bg-slate">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="relative">
+                    <div class="aspect-video md:aspect-square bg-gray-200 rounded-lg overflow-hidden shadow-xl">
+                        <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&q=80&w=1000" alt="Ingeniería y Estrategia" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700">
+                    </div>
+                    <div class="absolute -bottom-4 -right-4 bg-gold p-6 shadow-lg hidden lg:block max-w-xs">
+                        <p class="text-navy font-bold text-base italic">"Donde la ingeniería y la energía se encuentran."</p>
+                    </div>
+                </div>
+                <div>
+                    <span class="section-tag">Nuestra Sociedad</span>
+                    <h2 class="text-3xl font-bold text-navy mb-5">Expertos en Soluciones Energéticas de Centroamérica (ESEC)</h2>
+                    <p class="text-base text-gray-600 mb-4 leading-relaxed">
+                        Fundada por el <strong>Ing. Herrera Ortega</strong>, ESEC nace como la evolución natural de décadas de liderazgo en el sector energético nacional e internacional.
+                    </p>
+                    <p class="text-base text-gray-600 mb-6 leading-relaxed">
+                        Nuestra misión es proveer servicios de consultoría técnica de alto nivel, especializados en el <strong>Mercado Eléctrico Regional (MER)</strong>, diseño electromecánico avanzado y desarrollo de liderazgo ejecutivo.
+                    </p>
+                    <div class="space-y-3">
+                        <div class="flex items-start">
+                            <i class="fa-solid fa-circle-check text-gold mt-1 mr-3"></i>
+                            <p class="font-semibold text-navy text-sm">Asesoría integral en contratos y regulación energética.</p>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fa-solid fa-circle-check text-gold mt-1 mr-3"></i>
+                            <p class="font-semibold text-navy text-sm">Diseño y supervisión de ingeniería electromecánica.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios Section -->
+    <section id="servicios" class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-12">
+            <span class="section-tag mx-auto">Portafolio</span>
+            <h2 class="text-3xl font-bold text-navy">Especialidades Técnicas</h2>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-3 gap-6">
+            <div class="service-card p-8 bg-white border border-gray-100 rounded-lg transition-all">
+                <div class="w-14 h-14 bg-navy text-gold flex items-center justify-center rounded-lg mb-6 text-xl">
+                    <i class="fa-solid fa-chart-line"></i>
+                </div>
+                <h3 class="text-lg font-bold text-navy mb-3">Estrategia Corporativa</h3>
+                <p class="text-sm text-gray-600">Asesoría en modelos de negocio, contratos de suministro y planificación estratégica para el sector eléctrico.</p>
+            </div>
+
+            <div class="service-card p-8 bg-white border border-gray-100 rounded-lg transition-all">
+                <div class="w-14 h-14 bg-navy text-gold flex items-center justify-center rounded-lg mb-6 text-xl">
+                    <i class="fa-solid fa-bolt"></i>
+                </div>
+                <h3 class="text-lg font-bold text-navy mb-3">Mercado Regional (MER)</h3>
+                <p class="text-sm text-gray-600">Especialistas en transacciones transfronterizas, despacho económico y liquidación en el mercado centroamericano.</p>
+            </div>
+
+            <div class="service-card p-8 bg-white border border-gray-100 rounded-lg transition-all">
+                <div class="w-14 h-14 bg-navy text-gold flex items-center justify-center rounded-lg mb-6 text-xl">
+                    <i class="fa-solid fa-gears"></i>
+                </div>
+                <h3 class="text-lg font-bold text-navy mb-3">Ingeniería Avanzada</h3>
+                <p class="text-sm text-gray-600">Diseño de detalle, montaje electromecánico y auditorías de eficiencia para plantas industriales y subestaciones.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sector MER / CTA Section -->
+    <section id="mer" class="py-16 bg-navy text-white relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 relative z-10 text-center">
+            <h2 class="text-3xl font-bold mb-5">¿Busca optimizar su participación en el MER?</h2>
+            <p class="text-lg text-gray-400 mb-8 max-w-2xl mx-auto">
+                Ofrecemos inteligencia de mercado y soporte técnico para empresas que operan en la red eléctrica regional de Centroamérica.
+            </p>
+            <a href="mailto:carlos.rodolfo.herrera@gmail.com" class="inline-block bg-gold text-navy px-10 py-3.5 font-bold rounded-sm hover:scale-105 transition-all text-sm uppercase tracking-wide">
+                Solicitar Asesoría MER
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contacto" class="bg-slate py-12">
+        <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-3 gap-10">
+            <div>
+                <span class="text-2xl font-bold text-navy font-poppins mb-4 block">ESEC<span class="text-gold">.</span></span>
+                <p class="text-sm text-gray-600 mb-6">Ingeniería, Estrategia y Energía al servicio de la región centroamericana.</p>
+                <div class="flex space-x-3">
+                    <a href="#" class="w-9 h-9 bg-navy text-white flex items-center justify-center rounded-full hover:bg-gold hover:text-navy transition-all"><i class="fa-brands fa-linkedin-in text-sm"></i></a>
+                    <a href="#" class="w-9 h-9 bg-navy text-white flex items-center justify-center rounded-full hover:bg-gold hover:text-navy transition-all"><i class="fa-solid fa-envelope text-sm"></i></a>
+                </div>
+            </div>
+            <div>
+                <h4 class="text-navy font-bold uppercase tracking-widest text-xs mb-5">Enlaces Rápidos</h4>
+                <ul class="space-y-3 text-sm text-gray-600">
+                    <li><a href="#inicio" class="hover:text-gold transition-colors">Inicio</a></li>
+                    <li><a href="#nosotros" class="hover:text-gold transition-colors">Nuestra Sociedad</a></li>
+                    <li><a href="#servicios" class="hover:text-gold transition-colors">Servicios Técnicos</a></li>
+                    <li><a href="#mer" class="hover:text-gold transition-colors">Sector Regional</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-navy font-bold uppercase tracking-widest text-xs mb-5">Contacto Directo</h4>
+                <ul class="space-y-3 text-sm text-gray-600">
+                    <li class="flex items-center">
+                        <i class="fa-solid fa-user-tie mr-3 text-gold text-xs"></i>
+                        Ing. Carlos Rodolfo Herrera
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fa-solid fa-phone mr-3 text-gold text-xs"></i>
+                        (503) 7851-5783
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fa-solid fa-location-dot mr-3 text-gold text-xs"></i>
+                        San Salvador, El Salvador
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 mt-12 pt-6 border-t border-gray-200 text-center text-[11px] text-gray-500 uppercase tracking-widest">
+            &copy; 2024 ESEC - Expertos en Soluciones Energéticas de Centroamérica.
+        </div>
+    </footer>
+
+</body>
+</html>
